@@ -152,4 +152,13 @@ public class GeometriaTest {
 		
 		assertEquals(esperado, resultado);
 	}
+	
+	@Test
+	public void testfiguradef() {
+		String resultado = Geometria.figura(12);
+		String esperado = "Default";
+		
+		
+		assertEquals(esperado, resultado);
+	}
 }
