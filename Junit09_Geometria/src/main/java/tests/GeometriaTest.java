@@ -8,6 +8,8 @@ import JUnit.Junit09_Geometria.dto.Geometria;
 
 public class GeometriaTest {
 
+	Geometria geometria = new Geometria();
+	Geometria g = new Geometria(1); 
 	
 	@Test
 	public void testAreaCuadrado() {
@@ -161,4 +163,62 @@ public class GeometriaTest {
 		
 		assertEquals(esperado, resultado);
 	}
+
+	@Test
+	public void testtoString() {
+		
+		String s = "Geometria [id=9, nom=Default, area=0.0]";
+		
+		assertEquals(s, geometria.toString());
+	}
+	
+	@Test
+	public void testGetId() {
+		int resultado = geometria.getId();
+		int esperado = geometria.getId();
+		assertEquals(esperado, resultado);
+	}
+	@Test
+	public void testSetId() {
+		geometria.setId(8);
+		int resultado = geometria.getId();
+		int esperado =8;
+		assertEquals(esperado, resultado);
+	}
+	@Test
+	public void testGetNom() {
+		String resultado = geometria.getNom();
+		String esperado = geometria.getNom();
+		assertEquals(esperado, resultado);
+	}
+	@Test
+	public void testSetNom() {
+		geometria.setNom("Trapecio");
+		String resultado = geometria.getNom();
+		String esperado = "Trapecio";
+		assertEquals(esperado, resultado);
+	}
+
+	@Test
+	public void testGetArea() {
+		double resultado = geometria.getArea();
+		double esperado = geometria.getArea();
+		assertEquals(esperado, resultado);
+	}
+	@Test
+	public void testSetArea() {
+		geometria.setArea(200.91);
+		double resultado = geometria.getArea();
+		double esperado =200.91;
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void constructorTest() {
+	
+		
+		assertEquals(1, g.getId());
+		assertEquals("Cuadrado", g.getNom());
+	} 
 }
+
