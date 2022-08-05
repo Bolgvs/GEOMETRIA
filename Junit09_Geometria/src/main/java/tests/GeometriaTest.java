@@ -35,4 +35,49 @@ public class GeometriaTest {
 		
 		assertEquals(esperado, resultado);
 	}
+	
+	@Test
+	public void testAreaRectangulo() {
+		int resultado = Geometria.areaRectangulo(2, 3);
+		int esperado = 6;
+		
+		
+		assertEquals(esperado, resultado);
+	}
+
+	@Test
+	public void testAreaPentagono() {
+		int resultado = Geometria.areaPentagono(5, 2);
+		int esperado = 6;
+		
+		
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testAreaRombo() {
+		int resultado = Geometria.areaRombo(1, 2);
+		int esperado = 1;
+		
+		
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testAreaRomboide() {
+		int resultado = Geometria.areaRomboide(4, 4);
+		int esperado = 16;
+		
+		
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testAreaTrapecio() {
+		int resultado = Geometria.areaTrapecio(2, 2, 2);
+		int esperado = 4;
+		
+		
+		assertEquals(esperado, resultado);
+	}
 }
