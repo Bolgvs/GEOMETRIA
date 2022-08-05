@@ -48,7 +48,7 @@ public class GeometriaTest {
 	@Test
 	public void testAreaPentagono() {
 		int resultado = Geometria.areaPentagono(5, 2);
-		int esperado = 7;
+		int esperado = 5;
 		
 		
 		assertEquals(esperado, resultado);
@@ -84,7 +84,7 @@ public class GeometriaTest {
 	@Test
 	public void testfigura() {
 		String resultado = Geometria.figura(2);
-		String esperado = "Triangulo";
+		String esperado = "Circulo";
 		
 		
 		assertEquals(esperado, resultado);
