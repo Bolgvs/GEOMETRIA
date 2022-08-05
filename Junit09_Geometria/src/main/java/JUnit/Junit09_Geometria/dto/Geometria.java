@@ -61,7 +61,7 @@ public class Geometria {
 		}
 	
 	//Selector de figuras
-	public String figura(int fiCode) {
+	public static String figura(int fiCode) {
 		
 		String Figura="";
 		
