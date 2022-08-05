@@ -36,27 +36,27 @@ public class Geometria {
 		}
 	
 	//metodo area del rectangulo
-	public int areaRectangulo(int b , int h){
+	public static int areaRectangulo(int b , int h){
 		return b*h;
 		}
 	
-	//metodo area del rectangulo
-	public int areaPentagono(int p, int a){
+	//metodo area del pentagono
+	public static int areaPentagono(int p, int a){
 		return (p*a) / 2;
 		}
 	
 	//metodo area del rectangulo
-	public int areaRombo(int D,int d){
+	public static int areaRombo(int D,int d){
 		return (D*d)/2 ;
 		}
 	
 	//metodo area del rectangulo
-	public int areaRomboide(int b,int h){
+	public static int areaRomboide(int b,int h){
 		return b*h ;
 		}
 	
 	//metodo area del rectangulo
-	public int areaTrapecio (int B , int b , int h){ 
+	public static int areaTrapecio (int B , int b , int h){ 
 		return ((B+b)/2)*h;
 		}
 	
@@ -67,7 +67,7 @@ public class Geometria {
 		
 		switch (fiCode) 
 		{
-		case 1: Figura= "cuadrado";
+		case 1: Figura= "Cuadrado";
 			break;
 		case 2: Figura= "Circulo";
 			break;
