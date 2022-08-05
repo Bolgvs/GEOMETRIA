@@ -82,9 +82,72 @@ public class GeometriaTest {
 	}
 	
 	@Test
-	public void testfigura() {
+	public void testfigura1() {
+		String resultado = Geometria.figura(1);
+		String esperado = "Cuadrado";
+		
+		
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testfigura2() {
 		String resultado = Geometria.figura(2);
 		String esperado = "Circulo";
+		
+		
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testfigura3() {
+		String resultado = Geometria.figura(3);
+		String esperado = "Triangulo";
+		
+		
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testfigura4() {
+		String resultado = Geometria.figura(4);
+		String esperado = "Rectangulo";
+		
+		
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testfigura5() {
+		String resultado = Geometria.figura(5);
+		String esperado = "Pentagono";
+		
+		
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testfigura6() {
+		String resultado = Geometria.figura(6);
+		String esperado = "Rombo";
+		
+		
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testfigura7() {
+		String resultado = Geometria.figura(7);
+		String esperado = "Romboide";
+		
+		
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testfigura8() {
+		String resultado = Geometria.figura(8);
+		String esperado = "Trapecio";
 		
 		
 		assertEquals(esperado, resultado);
